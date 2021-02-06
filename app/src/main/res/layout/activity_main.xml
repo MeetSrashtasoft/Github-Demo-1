@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvRg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="About Person"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        />
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvRg"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:showDividers="beginning|middle|end"
+        android:layout_marginTop="10dp"
+        android:id="@+id/radioGroup">
+
+        <RadioButton
+            android:id="@+id/rb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Meet"
+            android:checked="false"/>
+    <RadioButton
+        android:id="@+id/rb2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jay"
+        android:checked="true"/>
+    <RadioButton
+        android:id="@+id/rb3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shrey"
+        android:checked="false"/>
+    <RadioButton
+        android:id="@+id/rb4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Punit"
+        android:checked="false"/>
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SUBMIT"
+        android:id="@+id/btnSubmit"
+        android:layout_below="@+id/cb4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvCb"
+        android:layout_below="@+id/radioGroup"
+        android:gravity="center"
+        android:text="Give him percentage about his Behaviour"
+        android:layout_marginTop="65dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="100%"
+        android:id="@+id/cb1"
+        android:layout_below="@+id/tvCb"
+        android:layout_centerHorizontal="true"
+        android:checked="false"/>
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="50%"
+        android:id="@+id/cb2"
+        android:layout_below="@+id/cb1"
+        android:layout_centerHorizontal="true"
+        android:checked="false"/>
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="20%"
+        android:id="@+id/cb3"
+        android:layout_below="@+id/cb2"
+        android:layout_centerHorizontal="true"
+        android:checked="false"/>
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="-10%"
+        android:id="@+id/cb4"
+        android:layout_below="@+id/cb3"
+        android:layout_centerHorizontal="true"
+        android:checked="false"/>
+
+
+
+
+
+</RelativeLayout>
